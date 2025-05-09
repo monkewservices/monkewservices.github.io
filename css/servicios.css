@@ -9,20 +9,65 @@ body {
   h2 {
     color: #23284c;
   }
-  .tabla-servicios {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 2rem;
+
+.table-container {
+  overflow-x: auto;
+  padding: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  background-color: #d9c8ff;
+  color: #00000c;
+}
+
+th, td {
+  border: 1px solid #545699;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #918cf2;
+  color: #00000c;
+}
+
+tr:nth-child(even) {
+  background-color: #f3ecff;
+}
+
+@media (max-width: 600px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
   }
-  .tabla-servicios th, .tabla-servicios td {
-    border: 1px solid #545699;
+
+  thead {
+    display: none;
+  }
+
+  tr {
+    margin-bottom: 1rem;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
     padding: 1rem;
-    text-align: left;
   }
-  .tabla-servicios th {
-    background-color: #918cf2;
-    color: white;
+
+  td {
+    border: none;
+    padding: 0.5rem 0;
+    position: relative;
   }
+
+  td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: block;
+    color: #23284c;
+  }
+}
   .separador {
     margin: 2rem 0;
     height: 2px;
