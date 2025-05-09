@@ -1,0 +1,44 @@
+/* servicios.css */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #d9c8ff;
+    color: #00000c;
+    padding: 2rem;
+  }
+  h2 {
+    color: #23284c;
+  }
+  .tabla-servicios {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+  }
+  .tabla-servicios th, .tabla-servicios td {
+    border: 1px solid #545699;
+    padding: 1rem;
+    text-align: left;
+  }
+  .tabla-servicios th {
+    background-color: #918cf2;
+    color: white;
+  }
+  .separador {
+    margin: 2rem 0;
+    height: 2px;
+    background-color: #545699;
+  }
+  .suscripcion {
+    background-color: #f3f0ff;
+    border: 2px dashed #918cf2;
+    padding: 1rem;
+  }
+
+  .volver {
+    margin-top: 2rem;
+    display: inline-block;
+    background-color: #23284c;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
